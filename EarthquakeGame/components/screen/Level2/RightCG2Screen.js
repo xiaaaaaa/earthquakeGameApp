@@ -10,8 +10,8 @@ const RightCG2Screen = () => {
     return(
         <View>
             <Text>RightCG2Screen</Text>
-            <Pressable onPress={() => navigation.navigate('TalkS_1Screen')}>
-                <Text style={{height:50, width:200, backgroundColor:'#000', color:'#fff'}}>回首頁</Text>
+            <Pressable onPress={() => navigation.navigate('Talk3_1Screen')}>
+                <Text style={{height:50, width:200, backgroundColor:'#000', color:'#fff'}}>前往第三關</Text>
             </Pressable>
         </View>
 

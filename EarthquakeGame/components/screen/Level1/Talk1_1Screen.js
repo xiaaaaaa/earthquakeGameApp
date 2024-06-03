@@ -16,9 +16,6 @@ const Talk1_1Screen = () => {
             <Pressable onPress={() => navigation.navigate('Talk2_1Screen')}>
                 <Text style={{height:50, width:200, backgroundColor:'#999999', color:'#fff'}}>去第二關</Text>
             </Pressable>
-            {/* <Pressable onPress={() => navigation.navigate('')}>
-                <Text style={{height:50, width:200, backgroundColor:'#000', color:'#fff'}}>下一頁</Text>
-            </Pressable> */}
         </View>
 
     );
