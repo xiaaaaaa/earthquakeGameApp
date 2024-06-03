@@ -13,6 +13,13 @@ import TalkS_2Screen from "../screen/StartTalk/TalkS_2Screen";
 
 // 第一關
 import Talk1_1Screen from "../screen/Level1/Talk1_1Screen";
+import Talk1_2Screen from "../screen/Level1/Talk1_2Screen";
+import Talk1_3Screen from "../screen/Level1/Talk1_3Screen";
+import Talk1_4Screen from "../screen/Level1/Talk1_4Screen";
+import Puzzle1Screen from "../screen/Level1/Puzzle1Screen";
+import Option1Screen from "../screen/Level1/Option1Screen";
+import RightCG1Screen from "../screen/Level1/RightCG1Screen";
+import WrongCG1Screen from "../screen/Level1/WrongCG1Screen";
 
 // 第二關
 
@@ -53,6 +60,34 @@ const HomeStack = ({navigation}) => {
             <Stack.Screen 
                 name="Talk1_1Screen"
                 component={Talk1_1Screen}
+            />
+            <Stack.Screen 
+                name="Talk1_2Screen"
+                component={Talk1_2Screen}
+            />
+            <Stack.Screen 
+                name="Talk1_3Screen"
+                component={Talk1_3Screen}
+            />
+            <Stack.Screen 
+                name="Talk1_4Screen"
+                component={Talk1_4Screen}
+            />
+            <Stack.Screen 
+                name="Puzzle1Screen"
+                component={Puzzle1Screen}
+            />
+            <Stack.Screen 
+                name="Option1Screen"
+                component={Option1Screen}
+            />
+            <Stack.Screen 
+                name="RightCG1Screen"
+                component={RightCG1Screen}
+            />
+            <Stack.Screen 
+                name="WrongCG1Screen"
+                component={WrongCG1Screen}
             />
             
             
