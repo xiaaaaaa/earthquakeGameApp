@@ -22,6 +22,7 @@ const TalkE_3Screen = () => {
             <Text>第二關{Answer2}</Text>
             <Text>第三關{Answer3}</Text>
             <Text>第四關{Answer4}</Text>
+
             {Answer1 === 1 && Answer2 === 1 && Answer3 === 1 && Answer4 === 1 ? (
                 <Text>所有答案都是正確的！</Text>
             ) : (Answer1 === 2 && Answer2 === 2 && Answer3 === 2 && Answer4 === 2) ? (
@@ -37,6 +38,7 @@ const TalkE_3Screen = () => {
             ) : (
                 <Text>答案尚未完成或組合未被識別。</Text>
             )}
+            
             <Pressable onPress={() => navigation.navigate('TalkS_1Screen')}>
                 <Text style={{height:50, width:200, backgroundColor:'#000', color:'#fff'}}>回首頁</Text>
             </Pressable>
