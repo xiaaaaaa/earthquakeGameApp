@@ -10,6 +10,9 @@ const WrongCG1Screen = () => {
     return(
         <View>
             <Text>WrongCG1Screen</Text>
+            <Pressable onPress={() => navigation.navigate('Talk2_1Screen')}>
+                <Text style={{height:50, width:200, backgroundColor:'#000', color:'#fff'}}>下一關</Text>
+            </Pressable>
         </View>
 
     );
