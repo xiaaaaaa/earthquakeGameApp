@@ -44,6 +44,7 @@ import Puzzle3Screen from "../screen/Level3/Puzzle3Screen";
 import Option3Screen from "../screen/Level3/Option3Screen";
 import RightCG3Screen from "../screen/Level3/RightCG3Screen";
 import WrongCG3Screen from "../screen/Level3/WrongCG3Screen";
+import WrongCG3_2Screen from "../screen/Level3/WrongCG3_2Screen";
 
 // 第四關
 import Talk4_1Screen from "../screen/Level4/Talk4_1Screen";
@@ -211,6 +212,10 @@ const HomeStack = ({ navigation }) => {
             <Stack.Screen
                 name="WrongCG3Screen"
                 component={WrongCG3Screen}
+            />
+            <Stack.Screen
+                name="WrongCG3_2Screen"
+                component={WrongCG3_2Screen}
             />
 
             <Stack.Screen
