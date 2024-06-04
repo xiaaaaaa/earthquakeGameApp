@@ -4,17 +4,17 @@ import { useNavigation} from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
 
-const Puzzle1Screen = () => {
+const Puzzle1_2Screen = () => {
     const navigation = useNavigation();
 
     return(
         <View>
             <ImageBackground
                 style={{width: '100%', height: '100%'}}
-                source={require('../../images/10p.png')}
+                source={require('../../images/10p_2.png')}
             >
                 
-                <Pressable onPress={() => navigation.navigate('Puzzle1_2Screen')}>
+                <Pressable onPress={() => navigation.navigate('Puzzle1_3Screen')}>
                     <Text style={styles.detection}></Text>
                 </Pressable>
             </ImageBackground>
@@ -34,4 +34,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Puzzle1Screen;
+export default Puzzle1_2Screen;

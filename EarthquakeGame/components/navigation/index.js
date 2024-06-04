@@ -24,6 +24,8 @@ import Talk1_2Screen from "../screen/Level1/Talk1_2Screen";
 import Talk1_3Screen from "../screen/Level1/Talk1_3Screen";
 import Talk1_4Screen from "../screen/Level1/Talk1_4Screen";
 import Puzzle1Screen from "../screen/Level1/Puzzle1Screen";
+import Puzzle1_2Screen from "../screen/Level1/Puzzle1_2Screen";
+import Puzzle1_3Screen from "../screen/Level1/Puzzle1_3Screen";
 import Option1Screen from "../screen/Level1/Option1Screen";
 import RightCG1Screen from "../screen/Level1/RightCG1Screen";
 import WrongCG1Screen from "../screen/Level1/WrongCG1Screen";
@@ -146,6 +148,14 @@ const HomeStack = ({ navigation }) => {
             <Stack.Screen
                 name="Puzzle1Screen"
                 component={Puzzle1Screen}
+            />
+            <Stack.Screen
+                name="Puzzle1_2Screen"
+                component={Puzzle1_2Screen}
+            />
+            <Stack.Screen
+                name="Puzzle1_3Screen"
+                component={Puzzle1_3Screen}
             />
             <Stack.Screen
                 name="Option1Screen"
