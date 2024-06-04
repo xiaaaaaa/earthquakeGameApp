@@ -30,9 +30,12 @@ import WrongCG1Screen from "../screen/Level1/WrongCG1Screen";
 
 // 第二關
 import Talk2_1Screen from "../screen/Level2/Talk2_1Screen";
+import Talk2_2Screen from "../screen/Level2/Talk2_2Screen";
+import Talk2_3Screen from "../screen/Level2/Talk2_3Screen";
 import Puzzle2Screen from "../screen/Level2/Puzzle2Screen";
 import Option2Screen from "../screen/Level2/Option2Screen";
-import RightCG2Screen from "../screen/Level2/RightCG2Screen";
+import RightCG2_1Screen from "../screen/Level2/RightCG2_1Screen";
+import RightCG2_2Screen from "../screen/Level2/RightCG2_2Screen";
 import WrongCG2Screen from "../screen/Level2/WrongCG2Screen";
 
 // 第三關
@@ -145,9 +148,17 @@ const HomeStack = ({ navigation }) => {
                 component={WrongCG1Screen}
             />
 
-            <Stack.Screen
+<Stack.Screen
                 name="Talk2_1Screen"
                 component={Talk2_1Screen}
+            />
+            <Stack.Screen
+                name="Talk2_2Screen"
+                component={Talk2_2Screen}
+            />
+            <Stack.Screen
+                name="Talk2_3Screen"
+                component={Talk2_3Screen}
             />
             <Stack.Screen
                 name="Puzzle2Screen"
@@ -158,8 +169,12 @@ const HomeStack = ({ navigation }) => {
                 component={Option2Screen}
             />
             <Stack.Screen
-                name="RightCG2Screen"
-                component={RightCG2Screen}
+                name="RightCG2_1Screen"
+                component={RightCG2_1Screen}
+            />
+            <Stack.Screen
+                name="RightCG2_2Screen"
+                component={RightCG2_2Screen}
             />
             <Stack.Screen
                 name="WrongCG2Screen"

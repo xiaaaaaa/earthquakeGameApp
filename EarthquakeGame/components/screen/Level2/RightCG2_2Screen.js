@@ -7,23 +7,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectAnswer2 } from "../../redux/Slice";
 import { correct2Counter, wrong2Counter } from "../../redux/Slice";
 
-const RightCG2Screen = () => {
+const RightCG2_2Screen = () => {
     const navigation = useNavigation();
-    // Get states from store
     const Answer2 = useSelector(selectAnswer2);
-    // Define a dispatch to send actions
     const dispatch = useDispatch();
 
     return (
         <View>
-            <Text>RightCG2Screen</Text>
+            <Text>RightCG2_2Screen</Text>
             <Text>{Answer2}</Text>
             <Pressable onPress={() => navigation.navigate('Talk3_1Screen')}>
-                <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>前往第三關</Text>
+                <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>下一關</Text>
             </Pressable>
         </View>
 
     );
 }
 
-export default RightCG2Screen;
+export default RightCG2_2Screen;
