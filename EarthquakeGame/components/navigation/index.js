@@ -59,6 +59,14 @@ import WrongCG4Screen from "../screen/Level4/WrongCG4Screen";
 import TalkE_1Screen from "../screen/EndTalk/TalkE_1Screen";
 import TalkE_2Screen from "../screen/EndTalk/TalkE_2Screen";
 import TalkE_3Screen from "../screen/EndTalk/TalkE_3Screen";
+import TalkE_4Screen from "../screen/EndTalk/TalkE_4Screen";
+import TalkE_5Screen from "../screen/EndTalk/TalkE_5Screen";
+import TalkE_6Screen from "../screen/EndTalk/TalkE_6Screen";
+import TalkE_7Screen from "../screen/EndTalk/TalkE_7Screen";
+import TalkE_8Screen from "../screen/EndTalk/TalkE_8Screen";
+import TalkE_9Screen from "../screen/EndTalk/TalkE_9Screen";
+import TalkE_10Screen from "../screen/EndTalk/TalkE_10Screen";
+import TalkE_11Screen from "../screen/EndTalk/TalkE_11Screen";
 
 const Stack = createNativeStackNavigator();
 
@@ -249,6 +257,38 @@ const HomeStack = ({ navigation }) => {
             <Stack.Screen
                 name="TalkE_3Screen"
                 component={TalkE_3Screen}
+            />
+            <Stack.Screen
+                name="TalkE_4Screen"
+                component={TalkE_4Screen}
+            />
+            <Stack.Screen
+                name="TalkE_5Screen"
+                component={TalkE_5Screen}
+            />
+            <Stack.Screen
+                name="TalkE_6Screen"
+                component={TalkE_6Screen}
+            />
+            <Stack.Screen
+                name="TalkE_7Screen"
+                component={TalkE_7Screen}
+            />
+            <Stack.Screen
+                name="TalkE_8Screen"
+                component={TalkE_8Screen}
+            />
+            <Stack.Screen
+                name="TalkE_9Screen"
+                component={TalkE_9Screen}
+            />
+            <Stack.Screen
+                name="TalkE_10Screen"
+                component={TalkE_10Screen}
+            />
+            <Stack.Screen
+                name="TalkE_11Screen"
+                component={TalkE_11Screen}
             />
 
         </Stack.Navigator>
