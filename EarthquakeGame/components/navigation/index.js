@@ -8,8 +8,15 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 // 開始對話
+import CoverScreen from "../screen/StartTalk/CoverScreen";
 import TalkS_1Screen from "../screen/StartTalk/TalkS_1Screen";
 import TalkS_2Screen from "../screen/StartTalk/TalkS_2Screen";
+import TalkS_3Screen from "../screen/StartTalk/TalkS_3Screen";
+import TalkS_4Screen from "../screen/StartTalk/TalkS_4Screen";
+import TalkS_5Screen from "../screen/StartTalk/TalkS_5Screen";
+import TalkS_6Screen from "../screen/StartTalk/TalkS_6Screen";
+import TalkS_7Screen from "../screen/StartTalk/TalkS_7Screen";
+import TalkS_8Screen from "../screen/StartTalk/TalkS_8Screen";
 
 // 第一關
 import Talk1_1Screen from "../screen/Level1/Talk1_1Screen";
@@ -63,10 +70,15 @@ const Navigation = () => {
 const HomeStack = ({ navigation }) => {
     return (
         <Stack.Navigator
+            initialRouteName="CoverScreen"
             screenOptions={{
                 headerShown: false
             }}
         >
+             <Stack.Screen
+                name="CoverScreen"
+                component={CoverScreen}
+            />
             <Stack.Screen
                 name="TalkS_1Screen"
                 component={TalkS_1Screen}
@@ -74,6 +86,30 @@ const HomeStack = ({ navigation }) => {
             <Stack.Screen
                 name="TalkS_2Screen"
                 component={TalkS_2Screen}
+            />
+            <Stack.Screen
+                name="TalkS_3Screen"
+                component={TalkS_3Screen}
+            />
+            <Stack.Screen
+                name="TalkS_4Screen"
+                component={TalkS_4Screen}
+            />
+            <Stack.Screen
+                name="TalkS_5Screen"
+                component={TalkS_5Screen}
+            />
+            <Stack.Screen
+                name="TalkS_6Screen"
+                component={TalkS_6Screen}
+            />
+            <Stack.Screen
+                name="TalkS_7Screen"
+                component={TalkS_7Screen}
+            />
+            <Stack.Screen
+                name="TalkS_8Screen"
+                component={TalkS_8Screen}
             />
 
             <Stack.Screen

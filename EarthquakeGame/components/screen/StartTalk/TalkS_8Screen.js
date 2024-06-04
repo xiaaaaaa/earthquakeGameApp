@@ -4,16 +4,16 @@ import { useNavigation} from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
 
-const TalkS_2Screen = () => {
+const TalkS_8Screen = () => {
     const navigation = useNavigation();
 
     return(
         <View>
             <ImageBackground
                 style={{width: '100%', height: '100%'}}
-                source={require('../../images/s_2.png')}
+                source={require('../../images/s_8.png')}
             >
-                <Pressable onPress={() => navigation.navigate('TalkS_3Screen')}>
+                <Pressable onPress={() => navigation.navigate('Talk1_1Screen')}>
                     <Text style={styles.detection}></Text>
                 </Pressable>
             </ImageBackground>
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
 
 
 
-export default TalkS_2Screen;
+export default TalkS_8Screen;
