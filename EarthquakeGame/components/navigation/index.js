@@ -23,6 +23,14 @@ import Talk1_1Screen from "../screen/Level1/Talk1_1Screen";
 import Talk1_2Screen from "../screen/Level1/Talk1_2Screen";
 import Talk1_3Screen from "../screen/Level1/Talk1_3Screen";
 import Talk1_4Screen from "../screen/Level1/Talk1_4Screen";
+import Talk1_5Screen from "../screen/Level1/Talk1_5Screen";
+import Talk1_6Screen from "../screen/Level1/Talk1_6Screen";
+import Talk1_7Screen from "../screen/Level1/Talk1_7Screen";
+import Talk1_8Screen from "../screen/Level1/Talk1_8Screen";
+import Talk1_9Screen from "../screen/Level1/Talk1_9Screen";
+import Talk1_10Screen from "../screen/Level1/Talk1_10Screen";
+import Talk1_11Screen from "../screen/Level1/Talk1_11Screen";
+
 import Puzzle1Screen from "../screen/Level1/Puzzle1Screen";
 import Puzzle1_2Screen from "../screen/Level1/Puzzle1_2Screen";
 import Puzzle1_3Screen from "../screen/Level1/Puzzle1_3Screen";
@@ -129,7 +137,7 @@ const HomeStack = ({ navigation }) => {
                 component={TalkS_8Screen}
             />
 
-            <Stack.Screen
+<Stack.Screen
                 name="Talk1_1Screen"
                 component={Talk1_1Screen}
             />
@@ -145,6 +153,35 @@ const HomeStack = ({ navigation }) => {
                 name="Talk1_4Screen"
                 component={Talk1_4Screen}
             />
+            <Stack.Screen
+                name="Talk1_5Screen"
+                component={Talk1_5Screen}
+            />
+            <Stack.Screen
+                name="Talk1_6Screen"
+                component={Talk1_6Screen}
+            />
+            <Stack.Screen
+                name="Talk1_7Screen"
+                component={Talk1_7Screen}
+            />
+            <Stack.Screen
+                name="Talk1_8Screen"
+                component={Talk1_8Screen}
+            />
+            <Stack.Screen
+                name="Talk1_9Screen"
+                component={Talk1_9Screen}
+            />
+            <Stack.Screen
+                name="Talk1_10Screen"
+                component={Talk1_10Screen}
+            />
+            <Stack.Screen
+                name="Talk1_11Screen"
+                component={Talk1_11Screen}
+            />
+
             <Stack.Screen
                 name="Puzzle1Screen"
                 component={Puzzle1Screen}

@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontWeight:'bold',
        
-        paddingLeft:15,
-        paddingVertical:10,
+        paddingLeft:16,
+        paddingVertical:12,
         borderRadius:7,
         borderWidth:2,
         borderColor:'#fff',

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         color:'#fff'
     },
     btn: { 
-        marginTop:760,
+        marginTop:830,
         marginLeft:280,
         height: 50, 
         width: 100, 
@@ -44,8 +44,8 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontWeight:'bold',
        
-        paddingLeft:15,
-        paddingVertical:10,
+        paddingLeft:16,
+        paddingVertical:12,
         borderRadius:7,
         borderWidth:2,
         borderColor:'#fff',
