@@ -4,19 +4,16 @@ import { useNavigation} from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
 
-const Talk4_1Screen = () => {
+const Talk4_3Screen = () => {
     const navigation = useNavigation();
 
     return(
         <View>
             <ImageBackground
                 style={{width: '100%', height: '100%'}}
-                source={require('../../images/401.png')}
+                source={require('../../images/403.png')}
             >
-                <Pressable onPress={() => navigation.navigate('TalkE_1Screen')}>
-                    <Text style={{height:50, width:200, backgroundColor:'#999999', color:'#fff'}}>去結局對話</Text>
-                </Pressable>
-                <Pressable onPress={() => navigation.navigate('Talk4_2Screen')}>
+                <Pressable onPress={() => navigation.navigate('Talk4_4Screen')}>
                     <Text style={styles.detection}></Text>
                 </Pressable>
             </ImageBackground>
@@ -36,4 +33,4 @@ const styles = StyleSheet.create({
 
 
 
-export default Talk4_1Screen;
+export default Talk4_3Screen;

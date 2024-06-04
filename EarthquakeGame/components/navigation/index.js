@@ -47,6 +47,9 @@ import WrongCG3Screen from "../screen/Level3/WrongCG3Screen";
 
 // 第四關
 import Talk4_1Screen from "../screen/Level4/Talk4_1Screen";
+import Talk4_2Screen from "../screen/Level4/Talk4_2Screen";
+import Talk4_3Screen from "../screen/Level4/Talk4_3Screen";
+import Talk4_4Screen from "../screen/Level4/Talk4_4Screen";
 import Puzzle4Screen from "../screen/Level4/Puzzle4Screen";
 import Option4Screen from "../screen/Level4/Option4Screen";
 import RightCG4Screen from "../screen/Level4/RightCG4Screen";
@@ -205,6 +208,18 @@ const HomeStack = ({ navigation }) => {
             <Stack.Screen
                 name="Talk4_1Screen"
                 component={Talk4_1Screen}
+            />
+            <Stack.Screen
+                name="Talk4_2Screen"
+                component={Talk4_2Screen}
+            />
+            <Stack.Screen
+                name="Talk4_3Screen"
+                component={Talk4_3Screen}
+            />
+            <Stack.Screen
+                name="Talk4_4Screen"
+                component={Talk4_4Screen}
             />
             <Stack.Screen
                 name="Puzzle4Screen"
