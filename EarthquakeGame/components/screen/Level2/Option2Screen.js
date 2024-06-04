@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Pressable, View, Platform, } from 'react-native';
+import { StyleSheet, Pressable, View, Platform, Image, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
@@ -14,19 +14,30 @@ const Option2Screen = () => {
 
     return (
         <View>
-            <Text>Option2Screen</Text>
-            <Pressable onPress={() => {navigation.navigate('RightCG2_1Screen'); dispatch(correct2Counter());}}>
-                <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>選項一</Text>
-            </Pressable>
-            <Pressable onPress={() => {navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter());}}>
-                <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>選項二</Text>
-            </Pressable>
-            <Pressable onPress={() => {navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter());}}>
-                <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>選項二</Text>
-            </Pressable>
-            <Pressable onPress={() => {navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter());}}>
-                <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>選項二</Text>
-            </Pressable>
+            <ImageBackground
+                style={{ width: '100%', height: '100%' }}
+                source={require('../../images/20o.png')}
+            >
+                <View style={{ flexDirection: 'column', margin:'auto',marginBottom:350}}>
+                    <View style={{ flexDirection: 'row',marginBottom:40 }}>
+                        <Pressable onPress={() => { navigation.navigate('RightCG2_1Screen'); dispatch(correct2Counter()); }}>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent',marginRight:30 }}>選項一</Text>
+                        </Pressable>
+                        <Pressable onPress={() => { navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter()); }}>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent' }}>選項二</Text>
+                        </Pressable>
+                    </View>
+                    <View style={{ flexDirection: 'row' }}>
+                        <Pressable onPress={() => { navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter()); }}>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent', marginRight:30}}>選項二</Text>
+                        </Pressable>
+                        <Pressable onPress={() => { navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter()); }}>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent' }}>選項二</Text>
+                        </Pressable>
+                    </View>
+                </View>
+
+            </ImageBackground>
         </View>
 
     );
