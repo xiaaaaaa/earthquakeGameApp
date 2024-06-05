@@ -19,14 +19,14 @@ const Option4Screen = () => {
                 source={require('../../images/40o.png')}
             >
                 <View style={{ flexDirection: 'column', margin: 'auto' ,marginBottom:210}}>
-                    <Pressable onPress={() => { navigation.navigate('RightCG4Screen'); dispatch(wrong4Counter()); }}>
+                    <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(wrong4Counter()); }}>
                         <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:50, borderWidth:0 }}>選項一</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(wrong4Counter()); }}>
                         <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:50, borderWidth:0  }}>選項二</Text>
                     </Pressable>
 
-                    <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(correct4Counter()); }}>
+                    <Pressable onPress={() => { navigation.navigate('RightCG4Screen'); dispatch(correct4Counter()); }}>
                         <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:50, borderWidth:0  }}>選項二</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(wrong4Counter()); }}>
