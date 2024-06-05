@@ -4,7 +4,7 @@ import { NavigationContainer, useTheme } from "@react-navigation/native";
 import { NativeBaseProvider } from 'native-base';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
+import { TransitionPresets } from '@react-navigation/stack';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 // 開始對話
@@ -100,13 +100,18 @@ const HomeStack = ({ navigation }) => {
     return (
         <Stack.Navigator
             initialRouteName="CoverScreen"
-            screenOptions={{
-                headerShown: false
-            }}
+            screenOptions={({ route, navigation }) => ({
+                headerShown: false,
+                gestureEnabled: true,
+                ...TransitionPresets.ModalPresentationIOS,
+              })}
         >
              <Stack.Screen
                 name="CoverScreen"
                 component={CoverScreen}
+                options={{
+                    ...TransitionPresets.FadeFromBottomAndroid,
+                  }}
             />
             <Stack.Screen
                 name="TalkS_1Screen"

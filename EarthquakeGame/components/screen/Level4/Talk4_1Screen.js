@@ -13,9 +13,6 @@ const Talk4_1Screen = () => {
                 style={{width: '100%', height: '100%'}}
                 source={require('../../images/401.png')}
             >
-                <Pressable onPress={() => navigation.navigate('TalkE_1Screen')}>
-                    <Text style={{height:50, width:200, backgroundColor:'#999999', color:'#fff'}}>去結局對話</Text>
-                </Pressable>
                 <Pressable onPress={() => navigation.navigate('Talk4_2Screen')}>
                     <Text style={styles.detection}></Text>
                 </Pressable>
