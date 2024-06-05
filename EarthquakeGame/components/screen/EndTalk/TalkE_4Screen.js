@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, Pressable, View, Platform,Image, ImageBackground } from 'react-native';
-import { useNavigation} from '@react-navigation/native';
+import { StyleSheet, Pressable, View, Platform, Image, ImageBackground } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
 import { useDispatch, useSelector } from "react-redux";
@@ -10,7 +10,7 @@ import { correct1Counter, wrong1Counter } from "../../redux/Slice";
 
 const TalkE_4Screen = () => {
     const navigation = useNavigation();
-    
+
     const Answer1 = useSelector(selectAnswer1);
     const Answer2 = useSelector(selectAnswer2);
     const Answer3 = useSelector(selectAnswer3);
@@ -18,17 +18,27 @@ const TalkE_4Screen = () => {
     const dispatch = useDispatch();
 
 
-    return(
-        <View>
+    return (
+        <View style={{ backgroundColor:'white' }}>
             <ImageBackground
-                style={{width: '100%', height: '100%'}}
-                source={require('../../images/E_4_1.png')}
+                style={{ width: '100%', height: '100%' }}
+                source={require('../../images/E00.png')}
             >
+
                 {Answer1 === 1 ? (
-                <Image/>
-            ) : (
-                <Image/>
-            )}
+                    <Pressable onPress={() => navigation.navigate('TalkE_5Screen')}>
+                    <Image
+                        style={{ width: '100%', height: '100%' }}
+                        source={require('../../images/E01.png')}
+                    />
+                    </Pressable>
+                ) : (
+                    <Pressable onPress={() => navigation.navigate('TalkE_5Screen')}>
+                        <Image
+                            style={{ width: '100%', height: '100%' }}
+                            source={require('../../images/E_22.png')} />
+                    </Pressable>
+                )}
                 <Pressable onPress={() => navigation.navigate('TalkE_5Screen')}>
                     <Text style={styles.detection}></Text>
                 </Pressable>
@@ -40,12 +50,12 @@ const TalkE_4Screen = () => {
 
 
 const styles = StyleSheet.create({
-    detection: { 
-        height:'60%', 
-        width:'100%', 
-        marginTop:'80%',
-        backgroundColor:'transparent', 
-        color:'#fff'
+    detection: {
+        height: '60%',
+        width: '100%',
+        marginTop: '80%',
+        backgroundColor: 'transparent',
+        color: '#fff'
     }
 })
 

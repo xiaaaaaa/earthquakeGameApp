@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, Pressable, View, Platform,Image, ImageBackground } from 'react-native';
-import { useNavigation} from '@react-navigation/native';
+import { StyleSheet, Pressable, View, Platform, Image, ImageBackground } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
 import { useDispatch, useSelector } from "react-redux";
@@ -15,21 +15,34 @@ const TalkE_6Screen = () => {
     const Answer4 = useSelector(selectAnswer4);
     const dispatch = useDispatch();
 
-    return(
-        <View>
+    return (
+        <View style={{ backgroundColor:'white' }}>
             <ImageBackground
-                style={{width: '100%', height: '100%'}}
-                source={require('../../images/E_6_1.png')}
+                style={{ width: '100%', height: '100%' }}
+                source={require('../../images/E00.png')}
             >
                 {Answer1 === 1 ? (
-                    <Image/>
+                    <Image
+                        style={{ width: '100%', height: '100%' }}
+                        source={require('../../images/E_01.png')}
+                    />
                 ) : (
-                    <Image/>
+                    <Image
+                        style={{ width: '100%', height: '100%' }} />
                 )}
                 {Answer2 === 1 ? (
-                    <Image/>
+                    <Pressable onPress={() => navigation.navigate('TalkE_7Screen')}>
+                        <Image
+                            style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                            source={require('../../images/E02.png')}
+                        />
+                    </Pressable>
                 ) : (
-                    <Image/>
+                    <Pressable onPress={() => navigation.navigate('TalkE_7Screen')}>
+                        <Image
+                            style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                            source={require('../../images/E_22.png')} />
+                    </Pressable>
                 )}
                 <Pressable onPress={() => navigation.navigate('TalkE_7Screen')}>
                     <Text style={styles.detection}></Text>
@@ -42,12 +55,12 @@ const TalkE_6Screen = () => {
 
 
 const styles = StyleSheet.create({
-    detection: { 
-        height:'60%', 
-        width:'100%', 
-        marginTop:'80%',
-        backgroundColor:'transparent', 
-        color:'#fff'
+    detection: {
+        height: '60%',
+        width: '100%',
+        marginTop: '80%',
+        backgroundColor: 'transparent',
+        color: '#fff'
     }
 })
 

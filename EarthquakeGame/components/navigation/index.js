@@ -103,15 +103,12 @@ const HomeStack = ({ navigation }) => {
             screenOptions={({ route, navigation }) => ({
                 headerShown: false,
                 gestureEnabled: true,
-                ...TransitionPresets.ModalPresentationIOS,
+                ...TransitionPresets.RevealFromBottomAndroid,
               })}
         >
              <Stack.Screen
                 name="CoverScreen"
                 component={CoverScreen}
-                options={{
-                    ...TransitionPresets.FadeFromBottomAndroid,
-                  }}
             />
             <Stack.Screen
                 name="TalkS_1Screen"

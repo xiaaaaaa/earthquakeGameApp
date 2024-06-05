@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, Pressable, View, Platform,Image, ImageBackground } from 'react-native';
-import { useNavigation} from '@react-navigation/native';
+import { StyleSheet, Pressable, View, Platform, Image, ImageBackground } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
 import { useDispatch, useSelector } from "react-redux";
@@ -13,26 +13,42 @@ const TalkE_8Screen = () => {
     const Answer3 = useSelector(selectAnswer3);
     const Answer4 = useSelector(selectAnswer4);
 
-    return(
-        <View>
+    return (
+        <View style={{ backgroundColor:'white' }}>
             <ImageBackground
-                style={{width: '100%', height: '100%'}}
-                source={require('../../images/E_8_1.png')}
+                style={{ width: '100%', height: '100%' }}
+                source={require('../../images/E00.png')}
             >
                 {Answer1 === 1 ? (
-                    <Image/>
+                    <Image
+                        style={{ width: '100%', height: '100%' }}
+                        source={require('../../images/E_01.png')}
+                    />
                 ) : (
-                    <Image/>
+                    <Image
+                        style={{ width: '100%', height: '100%' }} />
                 )}
                 {Answer2 === 1 ? (
-                    <Image/>
+                    <Image
+                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                        source={require('../../images/E_02.png')}
+                    />
                 ) : (
-                    <Image/>
+                    <Image
+                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }} />
                 )}
                 {Answer3 === 1 ? (
-                    <Image/>
+                    <Pressable onPress={() => navigation.navigate('TalkE_9Screen')}>
+                        <Image
+                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            source={require('../../images/E03.png')} />
+                    </Pressable>
                 ) : (
-                    <Image/>
+                    <Pressable onPress={() => navigation.navigate('TalkE_9Screen')}>
+                        <Image
+                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            source={require('../../images/E_22.png')} />
+                    </Pressable>
                 )}
                 <Pressable onPress={() => navigation.navigate('TalkE_9Screen')}>
                     <Text style={styles.detection}></Text>
@@ -45,12 +61,12 @@ const TalkE_8Screen = () => {
 
 
 const styles = StyleSheet.create({
-    detection: { 
-        height:'60%', 
-        width:'100%', 
-        marginTop:'80%',
-        backgroundColor:'transparent', 
-        color:'#fff'
+    detection: {
+        height: '60%',
+        width: '100%',
+        marginTop: '80%',
+        backgroundColor: 'transparent',
+        color: '#fff'
     }
 })
 
