@@ -21,18 +21,18 @@ const Option2Screen = () => {
                 <View style={{ flexDirection: 'column', margin:'auto',marginBottom:410}}>
                     <View style={{ flexDirection: 'row',marginBottom:50 }}>
                         <Pressable onPress={() => { navigation.navigate('RightCG2_1Screen'); dispatch(correct2Counter()); }}>
-                            <Text style={{ height: 140, width: 130, backgroundColor: '#F6FCB0', color: 'transparent',marginRight:50, borderWidth:0 }}>選項一</Text>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent',marginRight:50, borderWidth:0 }}>選項一</Text>
                         </Pressable>
                         <Pressable onPress={() => { navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter()); }}>
-                            <Text style={{ height: 140, width: 130, backgroundColor: '#F6FCB0', color: 'transparent', borderWidth:0  }}>選項二</Text>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent', borderWidth:0  }}>選項二</Text>
                         </Pressable>
                     </View>
                     <View style={{ flexDirection: 'row' }}>
                         <Pressable onPress={() => { navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter()); }}>
-                            <Text style={{ height: 140, width: 130, backgroundColor: '#F6FCB0', color: 'transparent', marginRight:50, borderWidth:0 }}>選項二</Text>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent', marginRight:50, borderWidth:0 }}>選項二</Text>
                         </Pressable>
                         <Pressable onPress={() => { navigation.navigate('WrongCG2Screen'); dispatch(wrong2Counter()); }}>
-                            <Text style={{ height: 140, width: 130, backgroundColor: '#F6FCB0', color: 'transparent', borderWidth:0  }}>選項二</Text>
+                            <Text style={{ height: 140, width: 130, backgroundColor: 'transparent', color: 'transparent', borderWidth:0  }}>選項二</Text>
                         </Pressable>
                     </View>
                 </View>

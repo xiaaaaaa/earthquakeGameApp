@@ -20,13 +20,13 @@ const Option1Screen = () => {
             >
                 <View style={{ flexDirection: 'column', margin: 'auto' ,marginBottom:350}}>
                     <Pressable onPress={() => { navigation.navigate('RightCG1Screen'); dispatch(correct1Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: '#F6FCB0', color: 'transparent',marginBottom:40, borderWidth:0 }}>選項一</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40, borderWidth:0 }}>選項一</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG1Screen'); dispatch(wrong1Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: '#F6FCB0', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG1Screen'); dispatch(wrong1Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: '#F6FCB0', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
                     </Pressable>
                 </View>
 

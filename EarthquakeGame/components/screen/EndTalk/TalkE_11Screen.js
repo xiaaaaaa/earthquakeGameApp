@@ -14,7 +14,7 @@ const TalkE_11Screen = () => {
     const Answer4 = useSelector(selectAnswer4);
 
     return (
-        <View style={{ backgroundColor:'white' }}>
+        <View style={{ backgroundColor: 'white' }}>
             <ImageBackground
                 style={{ width: '100%', height: '100%' }}
                 source={require('../../images/E00.png')}
@@ -53,15 +53,23 @@ const TalkE_11Screen = () => {
                     <Image
                         style={{ width: 390, height: 844, marginTop: -844, marginLeft: 2 }} />
                 )}
-                {Answer1 === 1 || Answer2 === 1 || Answer3 === 1 || Answer4 === 1 ? (
+                {Answer1 === 1 && Answer2 === 1 && Answer3 === 1 && Answer4 === 1 ? (
                     <Pressable onPress={() => navigation.navigate('CoverScreen')}>
                         <Image
                             style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
-                            source={require('../../images/E22.png')} />
+                            source={require('../../images/E22_1.png')} />
+                    </Pressable>
+                ) : (Answer1 === 1 || Answer2 === 1 || Answer3 === 1 || Answer4 === 1) ? (
+                    <Pressable onPress={() => navigation.navigate('CoverScreen')}>
+                        <Image
+                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            source={require('../../images/E22_2.png')} />
                     </Pressable>
                 ) : (
-                    <Image
-                        style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }} />
+                    <Pressable onPress={() => navigation.navigate('CoverScreen')}>
+                        <Image style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                        source={require('../../images/E22_3.png')} />
+                    </Pressable>
                 )}
                 <Pressable onPress={() => navigation.navigate('CoverScreen')}>
                     <Text style={styles.detection}></Text>

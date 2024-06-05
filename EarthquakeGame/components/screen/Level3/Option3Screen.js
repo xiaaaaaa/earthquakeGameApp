@@ -20,13 +20,13 @@ const Option3Screen = () => {
             >
                 <View style={{ flexDirection: 'column', margin:'auto',marginBottom:330}}>
                 <Pressable onPress={() => { navigation.navigate('WrongCG3Screen'); dispatch(wrong3Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: '#F6FCB0', color: 'transparent',marginBottom:40, borderWidth:0 }}>選項一</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40, borderWidth:0 }}>選項一</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('RightCG3Screen'); dispatch(correct3Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: '#F6FCB0', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG3Screen'); dispatch(wrong3Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: '#F6FCB0', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40, borderWidth:0  }}>選項二</Text>
                     </Pressable>
                 </View>
 
