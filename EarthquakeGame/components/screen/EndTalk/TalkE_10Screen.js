@@ -30,31 +30,31 @@ const TalkE_10Screen = () => {
                 )}
                 {Answer2 === 1 ? (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                        style={{width: 416, height: 900, marginTop: -903, marginLeft: 7 }}
                         source={require('../../images/E_02.png')}
                     />
                 ) : (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }} />
+                        style={{ width: 416, height: 900, marginTop: -903, marginLeft: 7 }} />
                 )}
                 {Answer3 === 1 ? (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                        style={{width: 424, height: 918.5, marginTop: -905, marginLeft: 0 }}
                         source={require('../../images/E_03.png')} />
                 ) : (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }} />
+                        style={{ width: 424, height: 918.5, marginTop: -905, marginLeft: 0 }} />
                 )}
                 {Answer4 === 1 ? (
                     <Pressable onPress={() => navigation.navigate('TalkE_11Screen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -844, marginLeft: 2 }}
+                            style={{width: 424, height: 918, marginTop: -918, marginLeft: 0 }}
                             source={require('../../images/E04.png')} />
                     </Pressable>
                 ) : (
                     <Pressable onPress={() => navigation.navigate('TalkE_11Screen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -844, marginLeft: 2 }}
+                            style={{ width: 424, height: 918, marginTop: -918, marginLeft: 0 }}
                             source={require('../../images/E_22.png')} />
                     </Pressable>
                 )}
@@ -74,7 +74,8 @@ const styles = StyleSheet.create({
         width: '100%',
         marginTop: '80%',
         backgroundColor: 'transparent',
-        color: '#fff'
+        color: '#fff',
+        borderWidth:0
     }
 })
 

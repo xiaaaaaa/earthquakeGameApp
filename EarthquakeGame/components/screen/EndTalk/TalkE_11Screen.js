@@ -30,44 +30,44 @@ const TalkE_11Screen = () => {
                 )}
                 {Answer2 === 1 ? (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                        style={{ width: 416, height: 900, marginTop: -903, marginLeft: 7 }}
                         source={require('../../images/E_02.png')}
                     />
                 ) : (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }} />
+                        style={{ width: 416, height: 900, marginTop: -903, marginLeft: 7 }} />
                 )}
                 {Answer3 === 1 ? (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                        style={{ width: 424, height: 918.5, marginTop: -905, marginLeft: 0  }}
                         source={require('../../images/E_03.png')} />
                 ) : (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }} />
+                        style={{ width: 424, height: 918.5, marginTop: -905, marginLeft: 0  }} />
                 )}
                 {Answer4 === 1 ? (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -844, marginLeft: 2 }}
+                        style={{ width: 424, height: 918, marginTop: -918, marginLeft: 0  }}
                         source={require('../../images/E_04.png')} />
                 ) : (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -844, marginLeft: 2 }} />
+                        style={{ width: 424, height: 918, marginTop: -918, marginLeft: 0  }} />
                 )}
                 {Answer1 === 1 && Answer2 === 1 && Answer3 === 1 && Answer4 === 1 ? (
                     <Pressable onPress={() => navigation.navigate('CoverScreen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            style={{ width: 422, height: 913.51, marginTop: -915, marginLeft: 0 }}
                             source={require('../../images/E22_1.png')} />
                     </Pressable>
                 ) : (Answer1 === 1 || Answer2 === 1 || Answer3 === 1 || Answer4 === 1) ? (
                     <Pressable onPress={() => navigation.navigate('CoverScreen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            style={{ width: 422, height: 913.51, marginTop: -915, marginLeft: 0 }}
                             source={require('../../images/E22_2.png')} />
                     </Pressable>
                 ) : (
                     <Pressable onPress={() => navigation.navigate('CoverScreen')}>
-                        <Image style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                        <Image style={{ width: 422, height: 913.51, marginTop: -915, marginLeft: 0 }}
                         source={require('../../images/E22_3.png')} />
                     </Pressable>
                 )}

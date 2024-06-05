@@ -33,14 +33,14 @@ const TalkE_6Screen = () => {
                 {Answer2 === 1 ? (
                     <Pressable onPress={() => navigation.navigate('TalkE_7Screen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                            style={{ width: 416, height: 900, marginTop: -903, marginLeft: 7 }}
                             source={require('../../images/E02.png')}
                         />
                     </Pressable>
                 ) : (
                     <Pressable onPress={() => navigation.navigate('TalkE_7Screen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                            style={{ width: 416, height: 900, marginTop: -903, marginLeft: 7  }}
                             source={require('../../images/E_22.png')} />
                     </Pressable>
                 )}

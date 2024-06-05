@@ -30,23 +30,23 @@ const TalkE_8Screen = () => {
                 )}
                 {Answer2 === 1 ? (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }}
+                        style={{width: 416, height: 900, marginTop: -903, marginLeft: 7 }}
                         source={require('../../images/E_02.png')}
                     />
                 ) : (
                     <Image
-                        style={{ width: 390, height: 844, marginTop: -811, marginLeft: 2 }} />
+                        style={{ width: 416, height: 900, marginTop: -903, marginLeft: 7 }} />
                 )}
                 {Answer3 === 1 ? (
                     <Pressable onPress={() => navigation.navigate('TalkE_9Screen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            style={{  width: 424, height: 918.5, marginTop: -905, marginLeft: 0 }}
                             source={require('../../images/E03.png')} />
                     </Pressable>
                 ) : (
                     <Pressable onPress={() => navigation.navigate('TalkE_9Screen')}>
                         <Image
-                            style={{ width: 390, height: 844, marginTop: -843, marginLeft: 1 }}
+                            style={{  width: 424, height: 918.5, marginTop: -905, marginLeft: 0  }}
                             source={require('../../images/E_22.png')} />
                     </Pressable>
                 )}

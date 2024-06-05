@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
         width:'100%', 
         marginTop:'80%',
         backgroundColor:'transparent', 
-        color:'#fff'
+        color:'#fff',
+        borderWidth:0
     }
 })
 
