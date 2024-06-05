@@ -3,9 +3,15 @@ import { StyleSheet, Pressable, View, Platform,Image, ImageBackground } from 're
 import { useNavigation} from '@react-navigation/native';
 import { Text, VStack, HStack } from '@gluestack-ui/themed';
 import { Button, ButtonText, ButtonIcon, ButtonSpinner, ButtonGroup } from '@gluestack-ui/themed';
+import { useDispatch, useSelector } from "react-redux";
+import { selectAnswer1, selectAnswer2, selectAnswer3, selectAnswer4 } from "../../redux/Slice";
 
 const TalkE_10Screen = () => {
     const navigation = useNavigation();
+    const Answer1 = useSelector(selectAnswer1);
+    const Answer2 = useSelector(selectAnswer2);
+    const Answer3 = useSelector(selectAnswer3);
+    const Answer4 = useSelector(selectAnswer4);
 
     return(
         <View>
@@ -13,6 +19,26 @@ const TalkE_10Screen = () => {
                 style={{width: '100%', height: '100%'}}
                 source={require('../../images/E_10_1.png')}
             >
+                {Answer1 === 1 ? (
+                    <Image/>
+                ) : (
+                    <Image/>
+                )}
+                {Answer2 === 1 ? (
+                    <Image/>
+                ) : (
+                    <Image/>
+                )}
+                {Answer3 === 1 ? (
+                    <Image/>
+                ) : (
+                    <Image/>
+                )}
+                {Answer4 === 1 ? (
+                    <Image/>
+                ) : (
+                    <Image/>
+                )}
                 <Pressable onPress={() => navigation.navigate('TalkE_11Screen')}>
                     <Text style={styles.detection}></Text>
                 </Pressable>
