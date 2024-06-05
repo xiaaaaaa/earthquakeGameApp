@@ -7,25 +7,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectAnswer1 } from "../../redux/Slice";
 import { correct1Counter, wrong1Counter } from "../../redux/Slice";
 
-const RightCG1Screen = () => {
+const RightCG1_2Screen = () => {
     const navigation = useNavigation();
-    const Answer1 = useSelector(selectAnswer1);
-    const dispatch = useDispatch();
-
+    
     return (
-        // <View>
-        //     <Text>RightCG1Screen</Text>
-        //     <Text>{Answer1}</Text>
-        //     <Pressable onPress={() => navigation.navigate('Talk2_1Screen')}>
-        //         <Text style={{ height: 50, width: 200, backgroundColor: '#000', color: '#fff' }}>下一關</Text>
-        //     </Pressable>
-        // </View>
         <View>
         <ImageBackground
             style={{width: '100%', height: '100%'}}
-            source={require('../../images/10r1.png')}
+            source={require('../../images/10r2.png')}
         >
-            <Pressable onPress={() => navigation.navigate('RightCG1_2Screen')}>
+            <Pressable onPress={() => navigation.navigate('RightCG1_3Screen')}>
                 <Text style={styles.detection}></Text>
             </Pressable>
         </ImageBackground>
@@ -44,4 +35,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default RightCG1Screen;
+export default RightCG1_2Screen;
