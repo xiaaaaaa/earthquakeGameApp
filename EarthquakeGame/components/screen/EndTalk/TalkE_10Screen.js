@@ -55,7 +55,7 @@ const TalkE_10Screen = () => {
                     <Pressable onPress={() => navigation.navigate('TalkE_11Screen')}>
                         <Image
                             style={{ width: 424, height: 918, marginTop: -918, marginLeft: 0 }}
-                            source={require('../../images/E_22.png')} />
+                            source={require('../../images/E_25.png')} />
                     </Pressable>
                 )}
                 <Pressable onPress={() => navigation.navigate('TalkE_11Screen')}>
