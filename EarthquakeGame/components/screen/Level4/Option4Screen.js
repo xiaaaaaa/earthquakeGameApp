@@ -18,19 +18,19 @@ const Option4Screen = () => {
                 style={{ width: '100%', height: '100%' }}
                 source={require('../../images/40o.png')}
             >
-                <View style={{ flexDirection: 'column', margin: 'auto' ,marginBottom:160}}>
+                <View style={{ flexDirection: 'column', margin: 'auto' ,marginBottom:210}}>
                     <Pressable onPress={() => { navigation.navigate('RightCG4Screen'); dispatch(wrong4Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40 }}>選項一</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:50, borderWidth:0 }}>選項一</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(wrong4Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40 }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:50, borderWidth:0  }}>選項二</Text>
                     </Pressable>
 
                     <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(correct4Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:40 }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent',marginBottom:50, borderWidth:0  }}>選項二</Text>
                     </Pressable>
                     <Pressable onPress={() => { navigation.navigate('WrongCG4Screen'); dispatch(wrong4Counter()); }}>
-                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent' }}>選項二</Text>
+                        <Text style={{ height: 90, width: 280, backgroundColor: 'transparent', color: 'transparent', borderWidth:0  }}>選項二</Text>
                     </Pressable>
 
                 </View>

@@ -24,7 +24,7 @@ const Puzzle4Screen = () => {
 
 const styles = StyleSheet.create({
     btn: { 
-        marginTop:760,
+        marginTop:810,
         marginLeft:280,
         height: 50, 
         width: 100, 
